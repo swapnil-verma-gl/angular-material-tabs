@@ -1,0 +1,23 @@
+<button [matMenuTriggerFor]="menu" style="width: 100%">Open</button>
+
+<!-- This template displays the overlay content and is connected to the button -->
+<mat-menu #menu="matMenu" backdropClass="width-class">
+  <mat-tab-group
+    (click)="$event.stopPropagation()"
+    (keydown.tab)="$event.stopPropagation();"
+    (keydown.shift.tab)="$event.stopPropagation()"
+  >
+    <mat-tab label="first">
+      <app-child label="first tab"></app-child>
+    </mat-tab>
+    <mat-tab label="second">
+      <app-child label="second tab"></app-child>
+    </mat-tab>
+    <mat-tab label="third">
+      <app-child label="third tab"></app-child>
+    </mat-tab>
+    <mat-tab label="fourth">
+      <app-child label="fourth tab"></app-child>
+    </mat-tab>
+  </mat-tab-group>
+</mat-menu>

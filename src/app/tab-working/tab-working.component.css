@@ -1,0 +1,9 @@
+.width-class {
+  width: 100%;
+  max-width: 1000px
+}
+
+.mat-tab-working .mat-mdc-tab-body.mat-mdc-tab-body-active .mat-mdc-tab-body-content {
+  display: block;
+  visibility: visible !important;
+}
